@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-purple: #DD0AB2;
+    --color-brand-sandy-brown: #FF910C;
+    --color-brand-dark-green: #39892F;
+    --color-brand-blue: #0077D3;
+    --color-brand-dark-purple: #78256F;
+    --color-brand-navy: #2E2E84;
+    --color-brand-med-blue: #485DC5;
+    --color-brand-red: #EA141C;
+    --color-brand-salmon: #FD3F59;
+    --color-brand-orange: #FFC82E;
+    --color-brand-yellow: #FEFB34;
+    --color-brand-green: #53DA3F;
+    --color-brand-cyan: #01EDFA;
+    --color-brand-dark-orange: #FE4819
+}
+
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        opacity: 1;
+    }
+
+    20%,
+    22%,
+    24%,
+    55% {
+        opacity: 0.2;
+    }
+}
+
+.animate-flicker {
+    animation: flicker 4s infinite;
+}
