@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profileImg from "../assets/WhatsApp Image 2026-01-09 at 18.31.07.jpeg";
 
 export default function Home() {
@@ -5,7 +6,6 @@ export default function Home() {
         <main className="min-h-screen bg-brand-navy bg-tetris-grid pt-24 pb-12 px-4 sm:px-8 scanlines">
             <div className="max-w-6xl mx-auto space-y-12">
 
-                {/* Hero Section */}
                 <section className="grid md:grid-cols-12 gap-8 items-center bg-black/40 p-8 tetris-block-shadow tetris-border rounded-lg relative overflow-hidden group">
                     <div className="md:col-span-8 z-10">
                         <h1 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-white mb-4 italic">
@@ -17,15 +17,15 @@ export default function Home() {
                             I build responsive web applications, explore advanced security practices, and dive into ethical hacking challenges to make technology safer and smarter.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-6 py-3 bg-brand-purple text-white font-black uppercase tracking-widest tetris-block-shadow hover:scale-105 active:scale-95 transition-all">
+                            <Link to="/projects" className="px-6 py-3 bg-brand-purple text-white font-black uppercase tracking-widest tetris-block-shadow hover:scale-105 active:scale-95 transition-all inline-block">
                                 View My Work
-                            </button>
+                            </Link>
                             <button className="px-6 py-3 bg-brand-blue text-white font-black uppercase tracking-widest tetris-block-shadow hover:scale-105 active:scale-95 transition-all">
-                                Download Resume
+                                <a target="_blank" href="https://drive.google.com/file/d/1Zh6YH74jdUPI3GX6Y5rRydKXLtqEVjQH/view?usp=sharing"> Download Resume </a>
                             </button>
-                            <button className="px-6 py-3 bg-brand-green text-white font-black uppercase tracking-widest tetris-block-shadow hover:scale-105 active:scale-95 transition-all">
+                            <Link to="/contact" className="px-6 py-3 bg-brand-green text-white font-black uppercase tracking-widest tetris-block-shadow hover:scale-105 active:scale-95 transition-all inline-block">
                                 Contact Me
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="md:col-span-4 flex justify-center">
@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* About Me Section */}
+
                 <section className="bg-brand-dark-purple p-8 tetris-block-shadow tetris-border rounded-lg">
                     <h2 className="text-3xl font-black uppercase text-brand-yellow mb-6">/ About Me /</h2>
                     <div className="space-y-4 text-gray-100 font-medium text-lg max-w-4xl">
@@ -56,7 +56,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Skills Grid - Inspired by Tetris Shapes */}
+
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="bg-brand-red p-6 tetris-block-shadow tetris-border flex flex-col items-center">
                         <h3 className="font-black text-white uppercase mb-4 text-xl">Frontend</h3>
@@ -97,7 +97,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Projects Section */}
+
                 <section className="space-y-8">
                     <h2 className="text-4xl font-black uppercase text-brand-salmon italic">/// Selected Projects ///</h2>
                     <div className="grid md:grid-cols-2 gap-8">
@@ -128,7 +128,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Current Focus Section */}
+
                 <section className="bg-white/5 tetris-border p-8 border-dashed border-2">
                     <h2 className="text-2xl font-black uppercase text-brand-cyan mb-6">Currently Loading...</h2>
                     <div className="grid md:grid-cols-3 gap-6 font-bold text-gray-300 italic">
@@ -144,7 +144,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Theme Closer */}
+
                 <div className="text-center pt-8 border-t border-white/10">
                     <span className="text-brand-yellow text-xs font-black uppercase tracking-[1em] animate-pulse">Level 99 Developer</span>
                 </div>

@@ -1,42 +1,99 @@
 export default function Contact() {
     return (
-        <main className="min-h-screen bg-gradient-to-br from-brand-navy via-brand-dark-purple to-brand-navy pt-24 px-8 text-white">
-            <div className="max-w-2xl mx-auto">
-                <h1 className="text-4xl md:text-5xl font-bold mb-12">Get In Touch</h1>
-                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 shadow-xl shadow-brand-navy/50">
-                    <form className="space-y-6">
-                        <div>
-                            <label className="block text-gray-300 mb-2 font-medium">Name</label>
-                            <input
-                                type="text"
-                                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-all"
-                                placeholder="Your name"
-                            />
+        <main className="min-h-screen bg-brand-navy bg-tetris-grid pt-24 pb-12 px-4 sm:px-8 scanlines">
+            <div className="max-w-4xl mx-auto space-y-12">
+
+                <section className="text-center">
+                    <h1 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-white mb-4 italic">
+                        <span className="text-brand-cyan">Contact</span> Me
+                    </h1>
+                    <p className="text-lg text-gray-300 font-bold max-w-xl mx-auto">
+                        Feel free to reach out — I'm always open to new opportunities, collaborations, and conversations.
+                    </p>
+                </section>
+
+                <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    {/* Phone Card */}
+                    <a
+                        href="tel:+212612345678"
+                        className="group bg-black/40 tetris-border tetris-block-shadow p-8 flex flex-col items-center text-center hover:scale-105 transition-all duration-300 no-underline"
+                    >
+                        <div className="w-16 h-16 bg-brand-green flex items-center justify-center tetris-block-shadow mb-6">
+                            <span className="text-3xl">📞</span>
                         </div>
-                        <div>
-                            <label className="block text-gray-300 mb-2 font-medium">Email</label>
-                            <input
-                                type="email"
-                                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-all"
-                                placeholder="your@email.com"
-                            />
+                        <h2 className="text-2xl font-black uppercase text-brand-green mb-2">Phone</h2>
+                        <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
+                            +212 6 12 34 56 78
+                        </p>
+                        <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-green transition-colors">
+                            Tap to call →
+                        </span>
+                    </a>
+
+                    {/* Email Card */}
+                    <a
+                        href="mailto:adam.diouri@example.com"
+                        className="group bg-black/40 tetris-border tetris-block-shadow p-8 flex flex-col items-center text-center hover:scale-105 transition-all duration-300 no-underline"
+                    >
+                        <div className="w-16 h-16 bg-brand-purple flex items-center justify-center tetris-block-shadow mb-6">
+                            <span className="text-3xl">✉️</span>
                         </div>
-                        <div>
-                            <label className="block text-gray-300 mb-2 font-medium">Message</label>
-                            <textarea
-                                rows="4"
-                                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-all resize-none"
-                                placeholder="Your message..."
-                            ></textarea>
+                        <h2 className="text-2xl font-black uppercase text-brand-purple mb-2">Email</h2>
+                        <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
+                            adam.diouri@example.com
+                        </p>
+                        <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-purple transition-colors">
+                            Click to email →
+                        </span>
+                    </a>
+
+                    {/* GitHub Card */}
+                    <a
+                        href="https://github.com/diouri11"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group bg-black/40 tetris-border tetris-block-shadow p-8 flex flex-col items-center text-center hover:scale-105 transition-all duration-300 no-underline"
+                    >
+                        <div className="w-16 h-16 bg-brand-cyan flex items-center justify-center tetris-block-shadow mb-6">
+                            <span className="text-3xl">💻</span>
                         </div>
-                        <button
-                            type="submit"
-                            className="w-full py-3 bg-gradient-to-r from-brand-purple to-brand-salmon text-white font-semibold rounded-xl hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-brand-purple/30"
-                        >
-                            Send Message
-                        </button>
-                    </form>
+                        <h2 className="text-2xl font-black uppercase text-brand-cyan mb-2">GitHub</h2>
+                        <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
+                            github.com/diouri11
+                        </p>
+                        <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-cyan transition-colors">
+                            View repos →
+                        </span>
+                    </a>
+
+                    {/* LinkedIn Card */}
+                    <a
+                        href="https://linkedin.com/in/adam-diouri"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group bg-black/40 tetris-border tetris-block-shadow p-8 flex flex-col items-center text-center hover:scale-105 transition-all duration-300 no-underline"
+                    >
+                        <div className="w-16 h-16 bg-brand-blue flex items-center justify-center tetris-block-shadow mb-6">
+                            <span className="text-3xl">🔗</span>
+                        </div>
+                        <h2 className="text-2xl font-black uppercase text-brand-blue mb-2">LinkedIn</h2>
+                        <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
+                            Adam Diouri
+                        </p>
+                        <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-blue transition-colors">
+                            Connect →
+                        </span>
+                    </a>
+
+                </section>
+
+                <div className="text-center pt-8 border-t border-white/10">
+                    <span className="text-brand-yellow text-xs font-black uppercase tracking-[1em] animate-pulse">
+                        Let's Build Something Great
+                    </span>
                 </div>
+
             </div>
         </main>
     );
