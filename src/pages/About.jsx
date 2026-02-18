@@ -90,7 +90,7 @@ export default function About() {
                                 <li>Git & GitHub</li>
                                 <li>Docker</li>
                                 <li>Linux</li>
-                                <li>VS Code</li>
+                                <li>VS Coderrr</li>
                             </ul>
                         </div>
                     </div>
