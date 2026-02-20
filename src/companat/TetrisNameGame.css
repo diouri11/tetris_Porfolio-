@@ -1,0 +1,65 @@
+.tetris-name-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 0 20px rgba(221, 10, 178, 0.3),
+        inset 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.tetris-name-container canvas {
+    display: block;
+    image-rendering: pixelated;
+}
+
+.tetris-name-container.glow {
+    animation: tetris-glow 1.5s ease-in-out;
+}
+
+@keyframes tetris-glow {
+    0% {
+        box-shadow:
+            0 0 20px rgba(221, 10, 178, 0.3),
+            inset 0 0 40px rgba(0, 0, 0, 0.4);
+    }
+    50% {
+        box-shadow:
+            0 0 40px rgba(1, 237, 250, 0.6),
+            0 0 80px rgba(254, 251, 52, 0.3),
+            inset 0 0 40px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow:
+            0 0 20px rgba(221, 10, 178, 0.3),
+            inset 0 0 40px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.tetris-replay-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #01EDFA;
+    border: 2px solid #01EDFA;
+    padding: 6px 14px;
+    font-weight: 900;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.tetris-replay-btn:hover {
+    background: #01EDFA;
+    color: #000;
+    transform: scale(1.05);
+}

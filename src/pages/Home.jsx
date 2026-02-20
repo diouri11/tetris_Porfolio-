@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import profileImg from "../assets/WhatsApp Image 2026-01-09 at 18.31.07.jpeg";
+import TetrisNameGame from "../companat/TetrisNameGame";
 
 export default function Home() {
     return (
         <main className="min-h-screen bg-brand-navy bg-tetris-grid pt-24 pb-12 px-4 sm:px-8 scanlines">
             <div className="max-w-6xl mx-auto space-y-12">
+
+                {/* Tetris Name Animation */}
+                <section>
+                    <TetrisNameGame />
+                </section>
 
                 <section className="grid md:grid-cols-12 gap-8 items-center bg-black/40 p-8 tetris-block-shadow tetris-border rounded-lg relative overflow-hidden group">
                     <div className="md:col-span-8 z-10">
@@ -72,9 +78,8 @@ export default function Home() {
                         <h3 className="font-black text-white uppercase mb-4 text-xl">Backend</h3>
                         <ul className="text-white/90 font-bold space-y-1 text-center">
                             <li>Node.js</li>
-                            <li>Express.js</li>
                             <li>Python</li>
-                            <li>SQL / MongoDB</li>
+                            <li>SQL</li>
                         </ul>
                     </div>
                     <div className="bg-brand-purple p-6 tetris-block-shadow tetris-border flex flex-col items-center">

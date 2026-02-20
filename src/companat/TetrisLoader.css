@@ -1,0 +1,38 @@
+.tetris-loader-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background: transparent;
+    gap: 24px;
+}
+
+.tetris-loader-canvas {
+    display: block;
+    image-rendering: pixelated;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(1, 237, 250, 0.15);
+}
+
+.tetris-loader-text {
+    color: #01EDFA;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: loader-blink 1s steps(2) infinite;
+}
+
+@keyframes loader-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}

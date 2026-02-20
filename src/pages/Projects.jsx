@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import TetrisLoader from '../companat/TetrisLoader';
 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
@@ -44,7 +45,7 @@ export default function Projects() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-12">My Projects</h1>
 
                 {loading ? (
-                    <div className="text-center text-xl text-gray-400">Loading projects...</div>
+                    <TetrisLoader text="Loading Projects..." />
                 ) : (
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {projects.map((project, idx) => {
