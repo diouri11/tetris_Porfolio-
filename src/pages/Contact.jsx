@@ -41,7 +41,7 @@ export default function Contact() {
                         </div>
                         <h2 className="text-2xl font-black uppercase text-brand-purple mb-2">Email</h2>
                         <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
-                            adam.diouri@example.com
+                            adam.diouri11@outlook.com
                         </p>
                         <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-purple transition-colors">
                             Click to email →
@@ -69,7 +69,7 @@ export default function Contact() {
 
                     {/* LinkedIn Card */}
                     <a
-                        href="https://linkedin.com/in/adam-diouri"
+                        href="https://www.linkedin.com/in/adam-diouri-81451a377/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group bg-black/40 tetris-border tetris-block-shadow p-8 flex flex-col items-center text-center hover:scale-105 transition-all duration-300 no-underline"
