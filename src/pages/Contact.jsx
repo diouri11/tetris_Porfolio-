@@ -24,7 +24,7 @@ export default function Contact() {
                         </div>
                         <h2 className="text-2xl font-black uppercase text-brand-green mb-2">Phone</h2>
                         <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
-                            +212 6 12 34 56 78
+                            +212-6-6064958
                         </p>
                         <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-green transition-colors">
                             Tap to call →
