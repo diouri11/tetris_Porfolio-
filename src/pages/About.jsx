@@ -4,7 +4,7 @@ export default function About() {
             <div className="max-w-6xl mx-auto space-y-12">
 
                 {/* Heading Block */}
-                <div className="bg-brand-salmon p-6 tetris-block-shadow tetris-border w-fit">
+                <div className="bg-brand-dark-purple p-6 tetris-block-shadow tetris-border w-fit">
                     <h1 className="text-4xl lg:text-5xl font-black uppercase tracking-tighter italic">
                         About Me
                     </h1>

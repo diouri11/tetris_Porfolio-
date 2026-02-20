@@ -60,7 +60,7 @@ export default function Navbar() {
                     <div className="hidden md:block">
                         <Link
                             to="/contact"
-                            className="px-5 py-2 bg-gradient-to-r from-brand-purple to-brand-salmon text-white text-sm font-bold uppercase tracking-widest rounded-full hover:scale-105 hover:shadow-lg hover:shadow-brand-purple/40 transition-all duration-300 border border-white/10"
+                            className="px-5 py-2 bg-gradient-to-r from-brand-yellow  to-brand-green  text-white text-sm font-bold uppercase tracking-widest rounded-full hover:scale-105 hover:shadow-lg hover:shadow-brand-purple/40 transition-all duration-300 border border-white/10"
                         >
                             Hire Me
                         </Link>
