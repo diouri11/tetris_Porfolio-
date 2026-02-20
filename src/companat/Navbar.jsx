@@ -22,6 +22,7 @@ export default function Navbar() {
                     <Link
                         to="/"
                         className="text-2xl font-black italic tracking-tighter text-white hover:text-brand-yellow transition-all duration-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]"
+                        style={{ fontFamily: "'Pixelify Sans', sans-serif" }}
                     >
                         ADAM DIOURI
                     </Link>

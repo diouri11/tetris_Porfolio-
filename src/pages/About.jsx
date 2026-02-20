@@ -15,7 +15,7 @@ export default function About() {
                     <div className="z-10 relative">
                         <h2 className="text-2xl font-black text-brand-salmon mb-4 uppercase">/ Personal Statement /</h2>
                         <p className="text-xl leading-snug font-bold border-l-4 border-brand-purple pl-4 text-gray-200">
-                            Hi, I’m <span className="text-brand-yellow">Adam Diouri</span> — a second-year full-stack developer student at CMC Casablanca and a cybersecurity enthusiast. I’m passionate about creating web applications that are functional, efficient, and secure. I thrive on solving complex problems, learning new technologies, and exploring the intersection between software development and cybersecurity.
+                            Hi, I’m <span className="text-brand-yellow" style={{ fontFamily: "'Pixelify Sans', sans-serif" }}>Adam Diouri</span> — a second-year full-stack developer student at CMC Casablanca and a cybersecurity enthusiast. I’m passionate about creating web applications that are functional, efficient, and secure. I thrive on solving complex problems, learning new technologies, and exploring the intersection between software development and cybersecurity.
                         </p>
                         <p className="mt-4 text-lg font-medium italic text-brand-cyan">
                             I believe technology is most powerful when it’s built with purpose, security, and user experience in mind.

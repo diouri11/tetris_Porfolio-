@@ -78,7 +78,7 @@ export default function Contact() {
                             <span className="text-3xl">🔗</span>
                         </div>
                         <h2 className="text-2xl font-black uppercase text-brand-blue mb-2">LinkedIn</h2>
-                        <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors">
+                        <p className="text-gray-300 font-bold text-lg group-hover:text-white transition-colors" style={{ fontFamily: "'Pixelify Sans', sans-serif" }}>
                             Adam Diouri
                         </p>
                         <span className="mt-4 text-xs font-black uppercase tracking-widest text-gray-500 group-hover:text-brand-blue transition-colors">

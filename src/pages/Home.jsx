@@ -15,7 +15,7 @@ export default function Home() {
                 <section className="grid md:grid-cols-12 gap-8 items-center bg-black/40 p-8 tetris-block-shadow tetris-border rounded-lg relative overflow-hidden group">
                     <div className="md:col-span-8 z-10">
                         <h1 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-white mb-4 italic">
-                            Hi, I’m <span className="text-brand-yellow">Adam Diouri</span> —
+                            Hi, I’m <span className="text-brand-yellow" style={{ fontFamily: "'Pixelify Sans', sans-serif" }}>Adam Diouri</span> —
                             <span className="block text-brand-salmon">Full-Stack Developer</span> &
                             <span className="text-brand-cyan"> Cybersecurity Enthusiast</span>
                         </h1>
