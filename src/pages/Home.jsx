@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import profileImg from "../assets/WhatsApp Image 2026-01-09 at 18.31.07.jpeg";
+import profileImg from "../assets/temp_pic.png";
 import TetrisNameGame from "../companat/TetrisNameGame";
 
 export default function Home() {
